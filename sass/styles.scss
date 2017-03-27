@@ -1,0 +1,22 @@
+@import 'base';
+
+#nav {
+    text-align: center;
+}
+#menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    vertical-align: top;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+#background-overlay {
+    @include z-index-1;
+    background: rgba(0, 0, 0,  0.8);
+
+}
