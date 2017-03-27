@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'colors';
 
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -22,4 +23,42 @@ body {
 
 ul {
   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  margin: 2% auto;
+  width: 60%;
+  font-size: 2em;
+  border-bottom: 1px solid $steel;
+}
+
+h4 {
+  font-size: 1.9em;
+}
+
+h5 {
+  font-size: 1.8em;
+}
+
+h6 {
+  font-size: 1.7em;
+}
+
+#footer {
+  clear: both;
+  background: $steel;
+  width: 100%;
 }
