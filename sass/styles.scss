@@ -1,127 +1,163 @@
 @import 'base';
+@import 'components/cards';
 
 #header {
-    width: 100%;
-    height: 350px; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;;
-    background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
 }
 
 .home-header {
-    background: url('../img/bg.jpg') no-repeat center center;
+  background: url('../img/bg.jpg') no-repeat center center;
 }
 
 .about-header {
-    background: url('../img/about.jpeg') no-repeat center center;
-    background-position-y: 0;
+  background: url('../img/about.jpeg') no-repeat center center;
+  background-position-y: 0;
 }
 
-#background-overlay {
-    width: 100%;
-    height: 100%;
-    @include z-index-1;
-    background: rgba(0, 0, 0,  0.5);
-
+.bg-overlay {
+  width: 100%;
+  height: 100%;
+  @include z-index-1;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 #nav {
-    padding: 20px;
-    @include z-index-2;
-    text-align: center
+  padding: 20px;
+  @include z-index-2;
+  text-align: center
 }
 
 #menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    vertical-align: top;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  vertical-align: top;
 }
 
 .menu-item {
-    display: inline-block;
-    font-size: 1.6em;
-    margin: 0 15px;
-    a {
-        text-decoration: none;
-        color: #fff;
-        &:hover {
-            text-decoration: underline;
-        }
+  display: inline-block;
+  font-size: 1.6em;
+  margin: 0 15px;
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
     }
+  }
 }
 
 .title-container {
-    position: relative;
-    top: 12%;
-    padding: 10px;
-    margin: 0 auto;
-    width: 25%;
-    text-align: center;
-    background: #eee;
+  position: relative;
+  top: 12%;
+  padding: 10px;
+  margin: 0 auto;
+  width: 25%;
+  text-align: center;
+  background: #eee;
 }
 
 .page-title-container {
-    @extend .title-container;
-    width: 100%;
+  @extend .title-container;
+  width: 100%;
 }
 
 .site-title {
-    color: $denim;
-    text-transform: uppercase;
-    font-size: 3em;
-    @include z-index-2;
+  color: $denim;
+  text-transform: uppercase;
+  font-size: 3em;
+  @include z-index-2;
 }
 
 .page-title {
-    @extend .site-title;
-    text-transform: none;
+  @extend .site-title;
+  text-transform: none;
 }
 
 .site-subtitle {
-    @include z-index-2;
-    position: relative;
-    top: 20%;
-    color: #fff;
-    font-size: 2.2em;
-    text-align: center;
-    font-style: italic;
-    font-weight: normal;
-    text-transform: none;
-}
-
-
-.honey {
-    color: $honey;
-}
-
-.denim-bg {
-    background: $cerulean;
-    color: $honey;
-}
-
-.title-card {
-    height: 300px;
-}
-.gutter {
-    padding: 0 15px;
-    height: 100%;
+  @include z-index-2;
+  position: relative;
+  top: 20%;
+  color: #fff;
+  font-size: 2.2em;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  text-transform: none;
 }
 
 #content {
-    margin: 0 auto;
-    font-size: 1.4em;
+  margin: 0 auto;
+  font-size: 1.4em;
 }
 
-.normal-size {
-    text-transform: none;
+.makers {
+  padding: 3% 0;
+  width: 100%;
+  color: $steel;
+  text-transform: uppercase;
+  text-align: center;
+  h3 {
+    width: 50%;
+    border-bottom: 1px solid $steel;
+  }
+  p {
+    font-size: 1.6em;
+  }
 }
 
-.vertical-align {
+.social-media {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#media-icons {
+  padding: 0;
+  list-style: none;
+}
+
+.media-icon {
+  @extend .denim-bg;
+  text-align: center;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  a {
     @include vertical-align;
+    color: $screen;
+    display: block;
+    font-size: 1.6em;
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
-.honey-bg {
-    color: $cerulean;
-    background: $marigold;
+.quote {
+  position: relative;
+  .fa-quote-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .fa-quote-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.copyright {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+#services {
+  background: url('../img/print.jpg') no-repeat center center;
+  background-size: cover;
+  height: 450px;
 }

@@ -8,4 +8,24 @@ $mist: #7A9D96;
 $screen: #C5C1C0;
 $steel: #0A1612;
 $denim: #1A2930;
-$marigold: #F7CE3E; 
+$marigold: #F7CE3E;
+
+// color classes
+.honey {
+  color: $honey;
+}
+// background classes
+.honey-bg {
+  color: $cerulean;
+  background: $marigold;
+}
+
+.denim-bg {
+  background: $cerulean;
+  color: $honey;
+}
+
+.steel-bg {
+  background: $steel;
+  color: #fff;
+}

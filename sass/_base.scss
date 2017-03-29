@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'colors';
 
+// base styles
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 62.5%;
@@ -25,9 +26,8 @@ ul {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   text-align: center;
-  text-transform: uppercase;
 }
 
 h1 {
@@ -56,11 +56,63 @@ h5 {
 }
 
 h6 {
-  font-size: 1.7em;
+  margin: 0;
+  padding: 15px 0;
+  font-size: 1.6em;
 }
 
 #footer {
+  padding: 20px 0;
+  @extend .steel-bg;
   clear: both;
-  background: $steel;
   width: 100%;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      font-size: 1.3em;
+    }
+  }
+  p {
+    @include vertical-align;
+    margin: 0;
+  }
+}
+
+blockquote {
+  text-align: center;
+  @extend .steel-bg;
+  margin: 0;
+  font-style: italic;
+  font-size: 2em;
+  padding: 60px 40px;
+  cite {
+    padding: 10px 0;
+    display: block;
+    font-size: 0.9em;
+  }
+
+  .fa {
+    font-size: 2em;
+    padding: 20px;
+    color: #fff;
+  }
+}
+
+// utility classes
+.vertical-align {
+    @include vertical-align;
+}
+
+.gutter {
+    padding: 0 15px;
+    height: 100%;
+}
+
+.overlay-link {
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
