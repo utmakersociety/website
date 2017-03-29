@@ -31,13 +31,18 @@ h2 {
 h3 {
   margin: 2% auto;
   width: 60%;
-  font-size: 2em;
-  border-bottom: 1px solid #0A1612; }
+  font-size: 2em; }
 
 h4 {
   font-size: 1.9em; }
 
 h5 {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 1.8em; }
 
 h6 {
@@ -51,16 +56,22 @@ h6 {
 #header {
   width: 100%;
   height: 350px;
-  background: url("../img/bg.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover; }
+
+.home-header {
+  background: url("../img/bg.jpg") no-repeat center center; }
+
+.about-header {
+  background: url("../img/about.jpeg") no-repeat center center;
+  background-position-y: 0; }
 
 #background-overlay {
   width: 100%;
   height: 100%;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.7); }
+  background: rgba(0, 0, 0, 0.5); }
 
 #nav {
   padding: 20px;
@@ -83,7 +94,7 @@ h6 {
     .menu-item a:hover {
       text-decoration: underline; }
 
-.title-container {
+.title-container, .page-title-container {
   position: relative;
   top: 12%;
   padding: 10px;
@@ -92,11 +103,17 @@ h6 {
   text-align: center;
   background: #eee; }
 
-.site-title {
+.page-title-container {
+  width: 100%; }
+
+.site-title, .page-title {
   color: #1A2930;
   text-transform: uppercase;
   font-size: 3em;
   z-index: 200; }
+
+.page-title {
+  text-transform: none; }
 
 .site-subtitle {
   z-index: 200;
@@ -106,11 +123,37 @@ h6 {
   font-size: 2.2em;
   text-align: center;
   font-style: italic;
-  font-weight: normal; }
+  font-weight: normal;
+  text-transform: none; }
 
 .honey {
   color: #DCAE10; }
 
+.denim-bg {
+  background: #00303F;
+  color: #DCAE10; }
+
+.title-card {
+  height: 300px; }
+
+.gutter {
+  padding: 0 15px;
+  height: 100%; }
+
 #content {
-  width: 100%;
+  margin: 0 auto;
   font-size: 1.4em; }
+
+.normal-size {
+  text-transform: none; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.honey-bg {
+  color: #00303F;
+  background: #F7CE3E; }

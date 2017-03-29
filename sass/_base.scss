@@ -42,7 +42,7 @@ h3 {
   margin: 2% auto;
   width: 60%;
   font-size: 2em;
-  border-bottom: 1px solid $steel;
+  //border-bottom: 1px solid $steel;
 }
 
 h4 {
@@ -50,6 +50,8 @@ h4 {
 }
 
 h5 {
+  margin: 0;
+  @include vertical-align;
   font-size: 1.8em;
 }
 
