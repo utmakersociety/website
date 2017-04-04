@@ -1,0 +1,29 @@
+.overlay-button {
+  display: block;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: center;
+  width: 142px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  i {
+    padding-left: 10px;
+    margin: 3px 0 0;
+  }
+}
+
+.primary {
+  width: 10%;
+  border: 1px solid #000;
+  background: $steel;
+  color: #fff;
+  padding: 8px 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

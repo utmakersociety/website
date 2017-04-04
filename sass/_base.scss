@@ -70,7 +70,7 @@ h6 {
     padding: 0;
     list-style: none;
     li {
-      font-size: 1.3em;
+      font-size: 1.4em;
     }
   }
   p {
@@ -84,18 +84,12 @@ blockquote {
   @extend .steel-bg;
   margin: 0;
   font-style: italic;
-  font-size: 2em;
-  padding: 60px 40px;
+  font-size: 2.2em;
+  padding: 5% 40px;
   cite {
     padding: 10px 0;
     display: block;
     font-size: 0.9em;
-  }
-
-  .fa {
-    font-size: 2em;
-    padding: 20px;
-    color: #fff;
   }
 }
 
@@ -105,8 +99,15 @@ blockquote {
 }
 
 .gutter {
-    padding: 0 15px;
+    padding: 0 25px;
     height: 100%;
+}
+
+
+.title-card-gutter {
+  position: absolute;
+  top: 0;
+  height: 300px;
 }
 
 .overlay-link {

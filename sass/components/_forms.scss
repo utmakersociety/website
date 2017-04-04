@@ -1,0 +1,55 @@
+form {
+  fieldset {
+    border: none;
+  }
+
+  legend {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    border-bottom: 1px solid  #000;
+  }
+
+  label {
+    display: block;
+  }
+
+  input[type=text], input[type=email] {
+    width: 100%;
+    border: 1px solid #CACACA;
+    border-radius: 3px;
+    padding: 5px 12px;
+  }
+
+  select {
+    border: 1px solid #CACACA;
+    width: 100px;
+    padding: 5px 12px;
+  }
+
+  textarea {
+    border: 1px solid #CACACA;
+    width: 50%;
+    height: 200px;
+    border-radius: 3px;
+  }
+}
+
+.text-label {
+  display: block;
+  padding: 5px 0;
+}
+.radio-label {
+  height: 20px;
+  display: block;
+  width: 10%;
+  position: relative;
+  input[type=radio] {
+    position: absolute;
+    top: 6px;
+    right: 0;
+  }
+}
+
+.form-control-group {
+  padding: 10px 20px;
+}
